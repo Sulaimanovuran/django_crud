@@ -9,6 +9,8 @@ from .forms import AddBookForm
 FBV - Function Based View
 CBV - Class Based View
 Heello John Snow
+
+Hello Sam Smith
 '''
 
 menu = [{'title': 'О сайте', 'url_name': 'about'},
