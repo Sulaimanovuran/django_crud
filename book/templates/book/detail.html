@@ -1,0 +1,16 @@
+{% extends 'book/base.html' %}
+
+{% block content %}
+
+<h1>{{ title }}</h1>
+
+{% if post.cover %}
+    <p><img class="img-article-left" src="{{ post.cover.url }}" alt=""></p>
+{% endif %}
+
+<p>{{ post.author }}</p>
+<p><b>{{ post.year }}</b></p>
+
+<p class="link-read-post"><a href="{% url 'edit' post.slug %}">Редактировать</a></p>
+<p class="link-read-post"><a href="{% url 'delete' post.slug %}">Удалить</a></p>
+{% endblock content %}
